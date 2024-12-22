@@ -1,0 +1,27 @@
+{
+  "name": "mcbole",
+  "version": "1.0.0",
+  "description": "Minecraft资源分享网站",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "minecraft",
+    "mods",
+    "resources"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "registry": "https://registry.npmmirror.com"
+} 
